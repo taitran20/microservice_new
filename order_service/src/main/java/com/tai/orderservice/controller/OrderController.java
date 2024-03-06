@@ -18,8 +18,7 @@ public class OrderController {
             orderService.placeOrder(orderRequest);
             return new ResponseEntity<>("Success",HttpStatus.CREATED);
         }catch (Exception e){
-            e.printStackTrace();
-            return new ResponseEntity<>("Not",HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
         }
     }
 }
