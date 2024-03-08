@@ -22,7 +22,7 @@ import java.util.UUID;
 @Transactional
 public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
-    private final WebClient webClient;
+    private final WebClient.Builder webClientBuilder;
     @Override
     public void placeOrder(OrderRequest orderRequest) {
         Order order = new Order();
@@ -36,9 +36,9 @@ public class OrderServiceImpl implements OrderService {
                 .stream()
                 .map(OrderLineItems::getSkuCode).toList();
         //Call InventoryService, and place if product in stock
-        InventoryResponse[] inventoryResponseArray = webClient.get()
+        InventoryResponse[] inventoryResponseArray = webClientBuilder.build().get()
                 //Tao 1 query check xem skuCode con hang hay khong
-                        .uri("http://localhost:8082/api/inventory",
+                        .uri("http://inventory-service/api/inventory",
                                 uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                         .retrieve()
                         .bodyToMono(InventoryResponse[].class)

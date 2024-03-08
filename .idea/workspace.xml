@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60b79279-0de7-40e8-80f9-f8b009b9c10a" name="Changes" comment="create eureka cloud server">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery_server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery_service/src/main/java/com/tai/discoveryserver/DiscoveryServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery_server/src/main/java/com/tai/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery_server/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory_service/src/main/java/com/tai/inventory_service/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_service/src/main/java/com/tai/inventory_service/InventoryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory_service/src/main/java/com/tai/inventory_service/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_service/src/main/java/com/tai/inventory_service/controller/InventoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/src/main/java/com/tai/orderservice/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/java/com/tai/orderservice/config/WebClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/src/main/java/com/tai/orderservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/java/com/tai/orderservice/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/src/main/java/com/tai/orderservice/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/java/com/tai/orderservice/service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product_service/pom.xml" afterDir="false" />
@@ -68,8 +67,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/microservice_new/discovery_service/src/main/java/com/tai/Main.java",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "a989e79fe22b55ecdf4ec7ff9214667b",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "026a4d8adbee491e2e07245913198b97",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -95,6 +94,9 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.InventoryServiceApplication">
+    <configuration name="generated-requests | #47" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="47" requestIdentifier="#47" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="discovery_server" />
@@ -103,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="inventory_service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tai.inventory_service.InventoryServiceApplication" />
@@ -127,6 +129,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #47" />
+      <item itemvalue="Spring Boot.DiscoveryServerApplication" />
+      <item itemvalue="Spring Boot.InventoryServiceApplication" />
+      <item itemvalue="Spring Boot.OrderServiceApplication" />
+      <item itemvalue="Spring Boot.ProductServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #47" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -141,7 +155,8 @@
       <workItem from="1709566239091" duration="2642000" />
       <workItem from="1709648343265" duration="3816000" />
       <workItem from="1709741282919" duration="1256000" />
-      <workItem from="1709823472061" duration="4449000" />
+      <workItem from="1709823472061" duration="4569000" />
+      <workItem from="1709911127113" duration="3596000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -159,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709742539196</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create eureka cloud server">
+      <option name="closed" value="true" />
+      <created>1709828052823</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709828052823</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

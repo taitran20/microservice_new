@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class InventoryController {
     private final InventoryService inventoryService;
-    @GetMapping()
+    @GetMapping
     public ResponseEntity<List<InventoryResponse>> isInStock(@RequestParam List<String> skuCode){
         try {
             return new ResponseEntity<>(inventoryService.isInStock(skuCode), HttpStatus.OK);
