@@ -13,6 +13,7 @@
         <module>order_service</module>
         <module>inventory_service</module>
         <module>discovery_server</module>
+        <module>api_gateway</module>
     </modules>
 
     <parent>
@@ -87,7 +88,7 @@
                     </excludes>
                 </configuration>
             </plugin>
-            <!--<plugin>
+            <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>3.2.1</version>
@@ -107,7 +108,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
 
